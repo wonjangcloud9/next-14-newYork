@@ -30,7 +30,6 @@
   animation: fadeInUp 2s ease-out forwards;
 }
 
-/* 반복되는 패턴을 위한 추가 스타일 */
 .textAnimation4 {
   animation: fadeInUp 2.5s ease-out forwards;
 }

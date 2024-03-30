@@ -1,6 +1,10 @@
 import { GET_BOOK_API_URL } from "../../constants";
 import styles from "../../styles/books.module.css";
 
+export const metadata = {
+  title: "책 목록",
+};
+
 export default async function BookList({
   params,
   searchParams: {},
@@ -76,4 +80,19 @@ async function getBookList(id: string) {
   const response = await fetch(`${GET_BOOK_API_URL}${id}`);
   const json = await response.json();
   return json;
+}
+
+export function BookListSkeleton() {
+  const array10 = Array.from({ length: 10 }, (_, index) => index + 1);
+
+  return (
+    <div className={styles.bookListContainer}>
+      {array10.map((index: number) => (
+        <div key={index} className={styles.bookCardSkeleton}>
+          <div className={styles.cardContentSkeletonImage}></div>
+          <div className={styles.cardContentSkeleton}></div>
+        </div>
+      ))}
+    </div>
+  );
 }

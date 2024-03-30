@@ -55,9 +55,38 @@
   border-radius: 5px;
   transition: background-color 0.3s;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-top: 15px; /* 링크의 위치를 고정 */
+  margin-top: 15px;
 }
 
 .buyLink:hover {
   background-color: #fad0c4;
+}
+
+.bookCardSkeleton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  animation: skeleton-loading 1.5s infinite;
+  height: 250px;
+}
+
+.cardContentSkeletonImage {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(133, 133, 133, 0.3);
+}
+
+.cardContentSkeleton {
+  width: 100%;
+  height: 20px;
+  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(133, 133, 133, 0.3);
 }

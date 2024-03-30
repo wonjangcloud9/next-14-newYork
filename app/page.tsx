@@ -37,7 +37,7 @@ async function getBestSellerList() {
 }
 
 export function BestSellerListSkeleton() {
-  const array10 = Array.from({ length: 30 }, (_, index) => index + 1);
+  const array10 = Array.from({ length: 10 }, (_, index) => index + 1);
 
   return (
     <div className={styles.container}>
