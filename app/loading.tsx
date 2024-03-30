@@ -1,3 +1,5 @@
+import { BestSellerListSkeleton } from "./page";
+
 export default function Loading() {
-  return <h2>Loading...</h2>;
+  return <BestSellerListSkeleton />;
 }

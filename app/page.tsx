@@ -4,6 +4,7 @@ import styles from "./styles/best-sellers.module.css";
 
 export default async function BestSellerList() {
   const bestSellerList = await getBestSellerList();
+
   return (
     <div className={styles.container}>
       {bestSellerList["results"].map((bestSeller: BestSellerListProps) => (
@@ -30,8 +31,19 @@ interface BestSellerListProps {
 }
 
 async function getBestSellerList() {
-  // await new Promise((resolve) => setTimeout(resolve, 10000));
   const response = await fetch(GET_BOOKS_API_URL);
   const json = await response.json();
   return json;
+}
+
+export function BestSellerListSkeleton() {
+  const array10 = Array.from({ length: 30 }, (_, index) => index + 1);
+
+  return (
+    <div className={styles.container}>
+      {array10.map((index: number) => (
+        <div key={index} className={styles.cardSkeleton}></div>
+      ))}
+    </div>
+  );
 }
