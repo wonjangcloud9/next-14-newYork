@@ -26,7 +26,7 @@
 
 .card:hover {
   transform: translateY(-5px) scale(1.02);
-  color: #fff; /* hover 시 텍스트 색상 변경 */
+  color: #fff;
 }
 
 .card:hover::after {
@@ -35,5 +35,9 @@
 
 .cardContent {
   position: relative;
-  z-index: 2; /* ::after 의사 요소보다 더 높은 z-index 값을 설정 */
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
 }
