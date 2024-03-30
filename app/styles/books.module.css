@@ -1,0 +1,63 @@
+.bookListContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.bookCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.bookCard:hover {
+  transform: scale(1.05);
+}
+
+.bookImage {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bookTitle {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: black;
+}
+
+.bookAuthor {
+  font-size: 1rem;
+  color: #8796b0;
+  margin-bottom: auto;
+}
+
+.bookDescription {
+  text-align: center;
+  font-size: 0.9rem;
+  margin: 15px 0;
+}
+
+.buyLink {
+  background-color: #ff9a9e;
+  color: #fff;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 15px; /* 링크의 위치를 고정 */
+}
+
+.buyLink:hover {
+  background-color: #fad0c4;
+}

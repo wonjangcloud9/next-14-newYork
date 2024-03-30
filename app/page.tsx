@@ -10,7 +10,7 @@ export default async function BestSellerList() {
       {bestSellerList["results"].map((bestSeller: BestSellerListProps) => (
         <BestSeller
           key={bestSeller["list_name_encoded"]}
-          bestSellerName={bestSeller["list_name"]}
+          bestSellerName={bestSeller["list_name_encoded"]}
         />
       ))}
     </div>
