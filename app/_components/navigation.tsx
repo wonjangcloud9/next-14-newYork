@@ -10,10 +10,10 @@ export default function Navigation() {
     <nav className={styles.nav}>
       <ul>
         <li>
-          <Link href="/">Home</Link> {path === "/" ? "🔥" : ""}
+          <Link href="/">홈</Link> {path === "/" ? "🔥" : ""}
         </li>
         <li>
-          <Link href="/about">About Us</Link> {path === "/about" ? "🔥" : ""}
+          <Link href="/about">소개</Link> {path === "/about" ? "🔥" : ""}
         </li>
       </ul>
     </nav>
