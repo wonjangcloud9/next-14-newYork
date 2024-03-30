@@ -7,6 +7,9 @@ export const metadata = {
     default: "로딩 중...",
   },
   description: "뉴욕 타임즈 베스트 셀러 목록을 보여주는 웹사이트",
+  icons: {
+    icon: "/flower.jpeg",
+  },
 };
 
 export default function RootLayout({

@@ -5,10 +5,35 @@
   padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+  transition: transform 0.3s, background-color 0.5s linear, color 0.5s linear; /* 텍스트 색상 변경 애니메이션 추가 */
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  color: #000;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  transition: left 0.5s ease-out;
 }
 
 .card:hover {
   transform: translateY(-5px) scale(1.02);
+  color: #fff; /* hover 시 텍스트 색상 변경 */
+}
+
+.card:hover::after {
+  left: 0;
+}
+
+.cardContent {
+  position: relative;
+  z-index: 2; /* ::after 의사 요소보다 더 높은 z-index 값을 설정 */
 }

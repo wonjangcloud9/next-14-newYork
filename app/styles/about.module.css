@@ -1,0 +1,70 @@
+.introSection {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.textAnimation1 {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.textAnimation2 {
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+.textAnimation3 {
+  animation: fadeInUp 2s ease-out forwards;
+}
+
+/* 반복되는 패턴을 위한 추가 스타일 */
+.textAnimation4 {
+  animation: fadeInUp 2.5s ease-out forwards;
+}
+
+.textAnimation5 {
+  animation: fadeInUp 3s ease-out forwards;
+}
+
+.textAnimation6 {
+  animation: fadeInUp 3.5s ease-out forwards;
+}
+
+.textAnimation7 {
+  animation: fadeInUp 4s ease-out forwards;
+}
+
+.textAnimation8 {
+  animation: fadeInUp 4.5s ease-out forwards;
+}
+
+.textAnimation9 {
+  animation: fadeInUp 5s ease-out forwards;
+}
+
+.introText {
+  opacity: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .introText {
+    font-size: 16px;
+  }
+}
