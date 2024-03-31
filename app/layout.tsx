@@ -1,4 +1,5 @@
 import Navigation from "./_components/navigation";
+import 벚꽃 from "./_components/벚꽃";
 import "./styles/global.css";
 
 export const metadata = {
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body>
         <Navigation />
         {children}
+        <벚꽃 />
       </body>
     </html>
   );
